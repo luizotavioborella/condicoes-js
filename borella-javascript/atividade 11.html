@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade</title>
+
+    <script>
+        var valor = Number(prompt("Informe o valor da compra:"))
+        var pag = prompt("Informe a forma de pagamento (Pix (14% de desconto), dinheiro (7% de desconto) ou cartão (sem desconto))")
+        if (pag === "pix" || pag === "Pix") {
+            desconto = valor * 0.14
+            valor = valor - desconto
+            alert("O valor fica R$" + valor)
+        }
+        else if (pag === "dinheiro" || pag === "Dinheiro") {
+            desconto = valor * 0.07
+            valor = valor - desconto
+            alert("O valor fica R$" + valor)
+        }
+        else {
+            alert("O valor permanece R$" + valor)
+        }
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>
